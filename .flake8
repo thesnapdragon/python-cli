@@ -1,0 +1,6 @@
+[flake8]
+
+exclude = venv, alembic
+filename = *.py
+max-line-length = 120
+show_source = True

@@ -1,0 +1,6 @@
+invoke
+python-dotenv
+alembic
+sqlalchemy
+mysqlclient
+python-json-logger
