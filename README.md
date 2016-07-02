@@ -15,13 +15,13 @@
 2. Install local Python version with *pyenv*:
 
     ```
-    $ pyenv install
+    $ pyenv install 3.5.0
     ```
-3. Create *virtualenv* and activate the environment:
+3. Create *virtualenv*:
 
     ```
-    $ virtualenv venv
-    $ source venv/bin/activate
+    $ pyenv virtualenv 3.5.0 python-cli
+    $ echo python-cli > .python-version
     ```
 4. Install *invoke* job runner:
 
