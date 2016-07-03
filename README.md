@@ -1,4 +1,4 @@
-# Python CLI scaffold
+# Python CLI skeleton
 
 ## Setup
 
@@ -33,9 +33,9 @@
 
 Install the app:
 
-    ```
-    $ inv install
-    ```
+```
+$ inv install
+```
 
 ### Development
 
