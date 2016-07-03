@@ -14,6 +14,11 @@ def migrate(ctx):
     ctx.run("alembic upgrade head")
 
 
+@task(post=[init, migrate])
+def install(ctx):
+    ctx.run("sudo ln -s config/python-cli.conf /etc/init")
+
+
 @task
 def lint(ctx):
     commands = (

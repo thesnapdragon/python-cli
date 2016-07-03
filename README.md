@@ -31,15 +31,10 @@
 
 ### Production
 
-1. Install requirements:
+Install the app:
 
     ```
-    $ inv init
-    ```
-2. Run the *alembic* migrations:
-
-    ```
-    $ inv migrate
+    $ inv install
     ```
 
 ### Development
