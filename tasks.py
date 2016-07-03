@@ -23,7 +23,7 @@ def install(ctx):
 def lint(ctx):
     commands = (
         "flake8 &&"
-        "pylint -r n lib &&"
+        "pylint -r n db &&"
         "pylint -r n misc &&"
         "pylint -r n tests"
         )
