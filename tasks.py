@@ -24,6 +24,17 @@ def lint(ctx):
     commands = (
         "flake8 &&"
         "pylint -r n lib &&"
-        "pylint -r n misc"
+        "pylint -r n misc &&"
+        "pylint -r n tests"
         )
     ctx.run(commands)
+
+
+@task
+def test(ctx):
+    ctx.run("nosetests --rednose --force-color")
+
+
+@task(pre=[lint, test])
+def build(ctx):
+    pass
